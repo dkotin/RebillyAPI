@@ -1,0 +1,50 @@
+{
+  "name": "redoc",
+  "description": "Swagger-generated API Reference Documentation",
+  "main": "dist/redoc.min.js",
+  "authors": [
+    "Roman Hotsiy"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Rebilly/ReDoc"
+  },
+  "license": "MIT",
+  "keywords": [
+    "OpenAPI",
+    "OpenAPI Specification",
+    "Swagger",
+    "JSON-Schema",
+    "API",
+    "REST",
+    "documentation",
+    "Angular 2"
+  ],
+  "homepage": "https://github.com/Rebilly/ReDoc",
+  "moduleType": [
+    "globals",
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "tests",
+    "lib",
+    "demo",
+    "build",
+    "docs",
+    "gulpfile.js",
+    "*.conf.js",
+    "*.config.js"
+  ],
+  "version": "0.7.6",
+  "_release": "0.7.6",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.7.6",
+    "commit": "79e1d8f5f334185ce1be877b2ca8581ceb64c89e"
+  },
+  "_source": "git://github.com/Rebilly/ReDoc.git",
+  "_target": "0.x",
+  "_originalSource": "redoc"
+}

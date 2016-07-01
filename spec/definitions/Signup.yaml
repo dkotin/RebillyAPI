@@ -6,6 +6,7 @@ required:
   - lastName
   - businessPhone
   - password
+  - url
 properties:
   email:
     description: The user email
@@ -28,3 +29,12 @@ properties:
     description: The user password
     type: string
     format: password
+  url:
+    description: The user's website domain address
+    type: string
+  currencies:
+    description: An array of ISO 3-letter currencies codes. Default: ['USD']
+    type: array
+  merchantCategoryCode:
+    description: An array of merchant cateogries ids. Default: 5734 (Computer Software Stores)
+    type: array

@@ -6,7 +6,7 @@ required:
   - lastName
   - businessPhone
   - password
-  - url
+  - website
 properties:
   email:
     description: The user email

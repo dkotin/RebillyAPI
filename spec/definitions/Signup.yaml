@@ -29,12 +29,18 @@ properties:
     description: The user password
     type: string
     format: password
-  url:
-    description: The user's website domain address
+  website:
+    description: The user's website address
     type: string
   currencies:
-    description: An array of ISO 3-letter currencies codes. Default: ['USD']
+    description: An array of currencies codes. Defaults to ['USD']
     type: array
+    items:
+      description: 3 letters ISO 4217 currency code
+      type: string
   merchantCategoryCode:
-    description: An array of merchant cateogries ids. Default: 5734 (Computer Software Stores)
+    description: An array of merchant cateogries codes. Defaults to [5734] (Computer Software Stores)
     type: array
+    items:
+      description: merchant category code
+      type: integer

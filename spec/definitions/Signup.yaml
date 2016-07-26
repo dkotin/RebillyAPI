@@ -33,14 +33,16 @@ properties:
     description: The user's website address
     type: string
   currencies:
-    description: An array of currencies codes. Defaults to ['USD']
+    description: An array of currencies codes
     type: array
+    default: ['USD']
     items:
       description: 3 letters ISO 4217 currency code
       type: string
   merchantCategoryCode:
-    description: An array of merchant cateogries codes. Defaults to [5734] (Computer Software Stores)
+    description: An array of merchant cateogries codes. Defaults to "Computer Software Stores"
     type: array
+    default: [5734]
     items:
-      description: merchant category code
+      description: Merchant category code
       type: integer

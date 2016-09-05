@@ -61,12 +61,20 @@ properties:
     description: The transactions's processor response
     type: string
     readOnly: true
-  gatewayResponseCode:
+  gatewayCode:
     description: The gateway's response code
     type: string
     readOnly: true
-  gatewayResponseMessage:
+  gatewayMessage:
     description: The gateway's response message
+    type: string
+    readOnly: true
+  originalGatewayCode:
+    description: The raw, unmapped gateway's response code
+    type: string
+    readOnly: true
+  originalGatewayMessage:
+    description: The raw, unmapped  gateway's response message
     type: string
     readOnly: true
   websiteId:

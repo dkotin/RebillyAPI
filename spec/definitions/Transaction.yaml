@@ -57,10 +57,6 @@ properties:
     allOf:
       - $ref: "#/definitions/ResourceId"
     readOnly: true
-  gatewayResponse:
-    description: The transactions's processor response
-    type: string
-    readOnly: true
   gatewayCode:
     description: The gateway's response code
     type: string

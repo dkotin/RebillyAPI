@@ -52,27 +52,60 @@ properties:
     allOf:
       - $ref: "#/definitions/ResourceId"
     readOnly: true
-  gatewayTransactionId:
-    description: The gateway's transaction ID
-    allOf:
-      - $ref: "#/definitions/ResourceId"
+  gateway:
+    type: object
+    description: The related gateway information
     readOnly: true
-  gatewayCode:
-    description: The gateway's response code
-    type: string
-    readOnly: true
-  gatewayMessage:
-    description: The gateway's response message
-    type: string
-    readOnly: true
-  originalGatewayCode:
-    description: The raw, unmapped gateway's response code
-    type: string
-    readOnly: true
-  originalGatewayMessage:
-    description: The raw, unmapped  gateway's response message
-    type: string
-    readOnly: true
+    properties:
+      transactionId:
+        description: The gateway's transaction ID
+        allOf:
+          - $ref: "#/definitions/ResourceId"
+        readOnly: true
+      response:
+        description: The gateway's response
+        type: object
+        properties:
+          code:
+            description: The gateway's response code
+            type: string
+            readOnly: true
+          message:
+            description: The gateway's response message
+            type: string
+            readOnly: true
+          originalCode:
+            description: The raw, unmapped gateway's response code
+            type: string
+            readOnly: true
+          originalMessage:
+            description: The raw, unmapped gateway's response message
+            type: string
+            readOnly: true
+      avsResponse:
+        description: The AVS gateway's response
+        type: object
+        properties:
+          code:
+            description: The raw response code
+            type: string
+            readOnly: true
+          message:
+            description: The raw response message
+            type: string
+            readOnly: true
+      cvvResponse:
+        description: The CVV gateway's response
+        type: object
+        properties:
+          code:
+            description: The raw response code
+            type: string
+            readOnly: true
+          message:
+            description: The raw response message
+            type: string
+            readOnly: true
   websiteId:
     description: Website's ID
     allOf:

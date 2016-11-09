@@ -1,6 +1,10 @@
 type: object
 readOnly: true
 properties:
+  createdTime:
+    description: The log created time
+    allOf:
+      - $ref: "#/definitions/ServerTimestamp"
   mode:
     description: The request mode
     type: string
@@ -26,3 +30,11 @@ properties:
   duration:
     description: The request time, msec
     type: integer
+  _links:
+    type: array
+    description: The links related to resource
+    readOnly: true
+    minItems: 1
+    maxItems: 1
+    items:
+      - $ref: "#/definitions/TransactionLink"

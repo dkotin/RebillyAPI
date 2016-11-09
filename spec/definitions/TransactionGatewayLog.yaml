@@ -1,14 +1,6 @@
 type: object
 readOnly: true
 properties:
-  mode:
-    description: The request mode
-    type: string
-    enum:
-      - Payment
-      - Authorize
-      - Refund
-      - Query
   headers:
     description: The request headers
     type: array
